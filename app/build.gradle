@@ -10,6 +10,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        dexOptions {
+            preDexLibraries false
+            jumboMode true
+            javaMaxHeapSize "2g"
+            incremental false
+        }
     }
     buildTypes {
         release {
